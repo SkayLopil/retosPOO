@@ -42,10 +42,12 @@ class Zombie{
    }
  }
   mostrar(){
+   push();
    translate(this.x, this.y);
    scale(this.dir,0.5);
    imageMode(CENTER);
    image(this.img[this.frame], 0, 0);
+   pop();
     }
   derecha(){
     this.frame++;
@@ -79,10 +81,12 @@ class Luigi{
    }
  }
   mostrar(){
+   push();
    translate(this.x, this.y);
    scale(this.dir,0.5);
    imageMode(CENTER);
    image(this.img[this.frame], 0, 0);
+   pop();
     }
   derecha(){
     this.frame++;
